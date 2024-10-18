@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Reaction Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="chemical-list"></div>
+        <div id="beaker" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Beaker</h2>
+            <div id="beaker-content"></div>
+        </div>
+        <div id="logs"></div>
+        <button onclick="refreshLab()">Refresh Lab</button>
+        <button onclick="clearLogs()">Clear Logs</button>
+    </div>
+
+    <!-- Sound effects -->
+    <audio id="bubble-sound" src="bubble.mp3"></audio>
+    <audio id="explosion-sound" src="explosion.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
